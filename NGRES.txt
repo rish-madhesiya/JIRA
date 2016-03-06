@@ -1,0 +1,27 @@
+Total Client Issues (Code fix):0
+Total Client Issues (Data fix):0
+Total Live issues(others):3
+---------------------------------Bug Counts---------------------------------
+
+TotalUI:0.0
+
+TotalIntegrationBugs:0.0
+
+TotalImplicitBugs:0.0
+
+TotalInsufficientBugs:0.0
+
+TotalIncompleteBugs:0.0
+
+TotalValidationsBugs:0.0
+TotalFuncBugs:2.0
+---------------------------------Functional Tests---------------------------------
+totalStories:12
+
+automatables:1
+
+notAutomatedStories:1
+
+---------------------------------Build Quality---------------------------------
+BuildQuality:89.55556
+Build Quality (old): 95.55556

@@ -1,0 +1,4 @@
+The Final Commitment according to jira: 81.0
+This is the total number of planned and completed Story points: 63
+This is the total number of planned Story points: 86
+This is the total number of unplanned completed Story points !!!!: 17
