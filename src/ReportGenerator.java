@@ -33,7 +33,7 @@ static Xls_Reader1 datatable1;
 public static float buildQuality;
 public static float buildQualityWithoutLiveIssues;
 public static float TotalLiveImpact=0;
-public static float TotalFunc=0,TotalUI=0,TotalInteg=0,TotalInsufficient=0,TotalIncompl=0,TotalImplicit=0,TotalValid=0;
+public static float TotalFunc=0,TotalUI=0,TotalInteg=0,TotalInsufficient=0,TotalIncompl=0,TotalImplicit=0,TotalValid=0,TotalProductDesign=0,TotalInadequate=0;
 static PrintStream fw;
 public static void parseJson(String s,float TotalLiveImpact) throws JSONException, BiffException, IOException
 {
@@ -64,6 +64,18 @@ public static void parseJson(String s,float TotalLiveImpact) throws JSONExceptio
 	      TotalInsufficient=TotalInsufficient+data[5];
 	      TotalImplicit=TotalImplicit+data[6];
 	      TotalValid=TotalValid+data[7];
+	      TotalInadequate=TotalInadequate+data[8];
+	      TotalProductDesign=TotalProductDesign+data[9];
+	      fw.println("-------------Story ID:----------------"+""+json.get("key"));
+	      fw.println("Functional Bugs"+data[1]);
+	      fw.println("Integrational Issues:"+data[2]);
+	      fw.println("UI Issues:"+data[3]);
+	      fw.println("Incomplete Requirements:"+data[4]);
+	      fw.println("Insufficient Analysis"+data[5]);
+	      fw.println("Implicit Requirements:"+data[6]);
+	      fw.println("Total Validation Issues:"+data[7]);
+	      fw.println("Inadequate Tesing:"+data[8]);
+	      fw.println("Product Design :"+data[9]);
 	      s=""+json.get("fields");
 	      String sub=s.substring(s.indexOf("customfield_10004"), s.indexOf("customfield_10400"));
 	      sub=sub.replaceAll("[a-z]+[/_]+[0-9]+", "");
@@ -95,6 +107,8 @@ public static void parseJson(String s,float TotalLiveImpact) throws JSONExceptio
 			fw.println("\nTotalInsufficientBugs:"+TotalInsufficient);
 			fw.println("\nTotalIncompleteBugs:"+TotalIncompl);
 			fw.println("\nTotalValidationsBugs:"+TotalValid);
+			fw.println("\nTotalInadequateTestingBugs:"+TotalInadequate);
+			fw.println("\nTotalProductDesign:"+TotalProductDesign);
 	fw.println("TotalFuncBugs:"+TotalFunc);
 	//("Relative Story Points:"+relStoryPoints);
 	//("Total Story Points:"+totalStoryPoints);
@@ -140,7 +154,7 @@ public static int returnCount(String str) throws BiffException, JSONException, I
 	public static void main(String args[]) throws JSONException, BiffException, IOException, ParseException
 	{
 		
-		for(int m=13;m<=13;m++)
+		for(int m=1;m<=1;m++)
 		{	
 			Vector dataHolder = Xls_Reader1.ReadCSV("Assignee.xls");
 			String SheetName=Xls_Reader1.CellData(dataHolder,m,3);
@@ -204,14 +218,15 @@ public static int returnCount(String str) throws BiffException, JSONException, I
 		//("BuildQuality:"+buildQuality);
 		fw.println("BuildQuality:"+buildQuality);
 		fw.println("Build Quality (old): " +buildQualityWithoutLiveIssues);
-		fw.close();
+		
 		WriteToExcel(SheetName,sprint,issuesExceptClient,i,j,totalstories,automatablestories,storiesautomated,notAutomatedstories,storiesnotautomatable);
 		
 		}
 		else
 		{
-		//(ProjectId+"not closed");	
+		fw.println(ProjectId+"not closed");	
 		}
+		fw.close();
 		}	
 	
 	//Executes the macro
