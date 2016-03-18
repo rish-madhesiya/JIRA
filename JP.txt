@@ -1,27 +1,133 @@
-Total Client Issues (Code fix):0
-Total Client Issues (Data fix):3
-Total Live issues(others):1
+Total Client Issues (Code fix):1
+Total Client Issues (Data fix):7
+Total Live issues(others):3
+-------------Story ID:----------------JP-1807
+Functional Bugs0.0
+Integrational Issues:1.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------JP-1800
+Functional Bugs2.0
+Integrational Issues:0.0
+UI Issues:1.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:1.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------JP-1750
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------JP-1746
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------JP-1745
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------JP-1726
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:1.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------JP-1725
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:2.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------JP-1699
+Functional Bugs1.0
+Integrational Issues:0.0
+UI Issues:5.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:1.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------JP-1698
+Functional Bugs3.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------JP-1669
+Functional Bugs2.0
+Integrational Issues:0.0
+UI Issues:1.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
 ---------------------------------Bug Counts---------------------------------
 
-TotalUI:17.0
+TotalUI:13.0
 
-TotalIntegrationBugs:4.0
+TotalIntegrationBugs:1.0
 
-TotalImplicitBugs:5.0
+TotalImplicitBugs:3.0
 
 TotalInsufficientBugs:0.0
 
 TotalIncompleteBugs:0.0
 
-TotalValidationsBugs:2.0
-TotalFuncBugs:26.0
+TotalValidationsBugs:1.0
+
+TotalInadequateTestingBugs:0.0
+
+TotalProductDesign:0.0
+TotalFuncBugs:14.0
+Relative Story Points: 4830.0
+Total Story Points :61.0
 ---------------------------------Functional Tests---------------------------------
-totalStories:12
+totalStories:10
 
-automatables:6
+automatables:5
 
-notAutomatedStories:3
+notAutomatedStories:0
 
 ---------------------------------Build Quality---------------------------------
-BuildQuality:62.01613
-Build Quality (old): 69.51613
+BuildQuality:67.68033
+Build Quality (old): 79.18033

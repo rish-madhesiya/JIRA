@@ -1,27 +1,123 @@
 Total Client Issues (Code fix):0
 Total Client Issues (Data fix):0
-Total Live issues(others):0
+Total Live issues(others):1
+-------------Story ID:----------------NJ-1292
+Functional Bugs1.0
+Integrational Issues:0.0
+UI Issues:1.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NJ-1289
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NJ-1287
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NJ-1286
+Functional Bugs1.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NJ-1256
+Functional Bugs1.0
+Integrational Issues:0.0
+UI Issues:2.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NJ-1246
+Functional Bugs2.0
+Integrational Issues:0.0
+UI Issues:1.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NJ-1210
+Functional Bugs1.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NJ-992
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NJ-234
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
 ---------------------------------Bug Counts---------------------------------
 
-TotalUI:38.0
+TotalUI:25.0
 
-TotalIntegrationBugs:4.0
+TotalIntegrationBugs:1.0
 
-TotalImplicitBugs:7.0
+TotalImplicitBugs:3.0
 
 TotalInsufficientBugs:0.0
 
 TotalIncompleteBugs:0.0
 
-TotalValidationsBugs:2.0
-TotalFuncBugs:53.0
----------------------------------Functional Tests---------------------------------
-totalStories:13
+TotalValidationsBugs:1.0
 
-automatables:7
+TotalInadequateTestingBugs:0.0
+
+TotalProductDesign:0.0
+TotalFuncBugs:33.0
+Relative Story Points: 2460.0
+Total Story Points :33.0
+---------------------------------Functional Tests---------------------------------
+totalStories:9
+
+automatables:9
 
 notAutomatedStories:0
 
 ---------------------------------Build Quality---------------------------------
-BuildQuality:75.40909
-Build Quality (old): 84.90909
+BuildQuality:72.545456
+Build Quality (old): 74.545456

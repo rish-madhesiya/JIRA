@@ -1,0 +1,143 @@
+Total Client Issues (Code fix):0
+Total Client Issues (Data fix):0
+Total Live issues(others):0
+-------------Story ID:----------------NRAA-236
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NRAA-235
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NRAA-228
+Functional Bugs1.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:1.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NRAA-227
+Functional Bugs1.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NRAA-222
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NRAA-219
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NRAA-212
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NRAA-211
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NRAA-210
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NRAA-202
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NRAA-201
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+---------------------------------Bug Counts---------------------------------
+
+TotalUI:0.0
+
+TotalIntegrationBugs:0.0
+
+TotalImplicitBugs:1.0
+
+TotalInsufficientBugs:0.0
+
+TotalIncompleteBugs:0.0
+
+TotalValidationsBugs:0.0
+
+TotalInadequateTestingBugs:0.0
+
+TotalProductDesign:0.0
+TotalFuncBugs:2.0
+Relative Story Points: 3360.0
+Total Story Points :36.0
+---------------------------------Functional Tests---------------------------------
+totalStories:11
+
+automatables:9
+
+notAutomatedStories:0
+
+---------------------------------Build Quality---------------------------------
+BuildQuality:93.333336
+Build Quality (old): 93.333336

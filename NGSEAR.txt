@@ -1,9 +1,389 @@
 Total Client Issues (Code fix):0
-Total Client Issues (Data fix):1
-Total Live issues(others):2
+Total Client Issues (Data fix):0
+Total Live issues(others):1
+-------------Story ID:----------------NGSEAR-707
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-703
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-701
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-697
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-696
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-695
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-694
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-693
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-692
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-688
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-687
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-685
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-682
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-681
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:1.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-680
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-679
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-678
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-677
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-676
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-674
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-672
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-671
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-670
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-666
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-665
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-664
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-663
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-662
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-661
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-659
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-654
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-653
+Functional Bugs1.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-646
+Functional Bugs1.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-636
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-625
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-622
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:1.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-556
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NGSEAR-512
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
 ---------------------------------Bug Counts---------------------------------
 
-TotalUI:1.0
+TotalUI:2.0
 
 TotalIntegrationBugs:0.0
 
@@ -14,14 +394,20 @@ TotalInsufficientBugs:0.0
 TotalIncompleteBugs:0.0
 
 TotalValidationsBugs:0.0
-TotalFuncBugs:5.0
+
+TotalInadequateTestingBugs:0.0
+
+TotalProductDesign:0.0
+TotalFuncBugs:2.0
+Relative Story Points: 9260.0
+Total Story Points :95.0
 ---------------------------------Functional Tests---------------------------------
-totalStories:35
+totalStories:38
 
-automatables:9
+automatables:37
 
-notAutomatedStories:0
+notAutomatedStories:37
 
 ---------------------------------Build Quality---------------------------------
-BuildQuality:91.19892
-Build Quality (old): 95.69892
+BuildQuality:95.47369
+Build Quality (old): 97.47369

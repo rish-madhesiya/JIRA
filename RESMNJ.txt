@@ -1,27 +1,113 @@
-Total Client Issues (Code fix):3
-Total Client Issues (Data fix):4
-Total Live issues(others):1
+Total Client Issues (Code fix):0
+Total Client Issues (Data fix):3
+Total Live issues(others):3
+-------------Story ID:----------------RESMNJ-1509
+Functional Bugs1.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------RESMNJ-1423
+Functional Bugs2.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------RESMNJ-1384
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:2.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------RESMNJ-1380
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------RESMNJ-1328
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------RESMNJ-1319
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------RESMNJ-1312
+Functional Bugs1.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:1.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------RESMNJ-1222
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
 ---------------------------------Bug Counts---------------------------------
 
-TotalUI:41.0
+TotalUI:28.0
 
-TotalIntegrationBugs:4.0
+TotalIntegrationBugs:1.0
 
-TotalImplicitBugs:10.0
+TotalImplicitBugs:5.0
 
 TotalInsufficientBugs:0.0
 
 TotalIncompleteBugs:0.0
 
-TotalValidationsBugs:3.0
-TotalFuncBugs:62.0
+TotalValidationsBugs:1.0
+
+TotalInadequateTestingBugs:0.0
+
+TotalProductDesign:0.0
+TotalFuncBugs:39.0
+Relative Story Points: 1720.0
+Total Story Points :22.0
 ---------------------------------Functional Tests---------------------------------
-totalStories:15
+totalStories:9
 
-automatables:12
+automatables:4
 
-notAutomatedStories:1
+notAutomatedStories:0
 
 ---------------------------------Build Quality---------------------------------
-BuildQuality:70.86957
-Build Quality (old): 90.86957
+BuildQuality:70.681816
+Build Quality (old): 78.181816

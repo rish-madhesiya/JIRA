@@ -1,4 +1,4 @@
-final live:15.0
-Total Story Planned and completed:76
-The unplanned completed is :1.0
-The total Story points planned:79
+final live:4.0
+Total Story Planned and completed:60
+The unplanned completed is :13.0
+The total Story points planned:65

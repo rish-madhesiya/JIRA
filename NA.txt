@@ -1,27 +1,93 @@
-Total Client Issues (Code fix):1
+Total Client Issues (Code fix):0
 Total Client Issues (Data fix):0
-Total Live issues(others):0
+Total Live issues(others):1
+-------------Story ID:----------------NA-1137
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NA-1124
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NA-1120
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:2.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NA-1075
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NA-1069
+Functional Bugs0.0
+Integrational Issues:0.0
+UI Issues:0.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
+-------------Story ID:----------------NA-1066
+Functional Bugs13.0
+Integrational Issues:0.0
+UI Issues:6.0
+Incomplete Requirements:0.0
+Insufficient Analysis0.0
+Implicit Requirements:0.0
+Total Validation Issues:0.0
+Inadequate Tesing:0.0
+Product Design :0.0
 ---------------------------------Bug Counts---------------------------------
 
-TotalUI:35.0
+TotalUI:21.0
 
-TotalIntegrationBugs:4.0
+TotalIntegrationBugs:1.0
 
-TotalImplicitBugs:7.0
+TotalImplicitBugs:3.0
 
 TotalInsufficientBugs:0.0
 
 TotalIncompleteBugs:0.0
 
-TotalValidationsBugs:2.0
-TotalFuncBugs:43.0
----------------------------------Functional Tests---------------------------------
-totalStories:10
+TotalValidationsBugs:1.0
 
-automatables:4
+TotalInadequateTestingBugs:0.0
+
+TotalProductDesign:0.0
+TotalFuncBugs:27.0
+Relative Story Points: 980.0
+Total Story Points :16.0
+---------------------------------Functional Tests---------------------------------
+totalStories:6
+
+automatables:3
 
 notAutomatedStories:0
 
 ---------------------------------Build Quality---------------------------------
-BuildQuality:46.36207
-Build Quality (old): 55.86207
+BuildQuality:59.25
+Build Quality (old): 61.25

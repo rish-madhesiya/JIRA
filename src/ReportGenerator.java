@@ -32,7 +32,8 @@ static Xls_Reader datatable;
 static Xls_Reader1 datatable1;
 public static float buildQuality;
 public static float buildQualityWithoutLiveIssues;
-public static float TotalLiveImpact=0;
+public static float TotalLiveImpact;
+public static String ProjectId,sprint;
 public static float TotalFunc=0,TotalUI=0,TotalInteg=0,TotalInsufficient=0,TotalIncompl=0,TotalImplicit=0,TotalValid=0,TotalProductDesign=0,TotalInadequate=0;
 static PrintStream fw;
 public static void parseJson(String s,float TotalLiveImpact) throws JSONException, BiffException, IOException
@@ -55,7 +56,7 @@ public static void parseJson(String s,float TotalLiveImpact) throws JSONExceptio
 	      for(int i=0;i<count;i++)
 	      {
 	      json=(JSONObject)array.get(i);
-	      float[] data=BuildQuality.calculateBuild((""+json.get("key")));
+	      float[] data=BuildQuality.calculateBuild((""+json.get("key")),ProjectId);
 	      float total_bq=data[0];
 	      TotalFunc=TotalFunc+data[1];
 	      TotalInteg=TotalInteg+data[2];
@@ -113,6 +114,8 @@ public static void parseJson(String s,float TotalLiveImpact) throws JSONExceptio
 	//("Relative Story Points:"+relStoryPoints);
 	//("Total Story Points:"+totalStoryPoints);
 	buildQualityWithoutLiveIssues=relStoryPoints/totalStoryPoints;
+	fw.println("Relative Story Points: "+relStoryPoints);
+	fw.println("Total Story Points :"+totalStoryPoints);
 	buildQuality=(relStoryPoints/totalStoryPoints)-TotalLiveImpact;
 }
 	
@@ -154,26 +157,29 @@ public static int returnCount(String str) throws BiffException, JSONException, I
 	public static void main(String args[]) throws JSONException, BiffException, IOException, ParseException
 	{
 		
-		for(int m=1;m<=1;m++)
+		for(int m=15;m<=15;m++)
 		{	
+			TotalLiveImpact=0;
 			Vector dataHolder = Xls_Reader1.ReadCSV("Assignee.xls");
 			String SheetName=Xls_Reader1.CellData(dataHolder,m,3);
 			//String SheetName="Resdex";
 			
-			String ProjectId=Xls_Reader1.CellData(dataHolder, m, 0);
+			 ProjectId=Xls_Reader1.CellData(dataHolder, m, 0);
 			fw=new PrintStream(new File(ProjectId+".txt"));
 			String Assignee=Xls_Reader1.CellData(dataHolder,1,1);
-			String sprint=Xls_Reader1.CellData(dataHolder,m,2)+"-104";
+			 sprint=Xls_Reader1.CellData(dataHolder,m,2)+"-105";
 			
 		String url="https://infoedge.atlassian.net/rest/api/2/search?jql=project%3D%22"+ProjectId+"%22%20and%20Sprint%3D"+sprint+"%20and%20type%20in%20(Improvement%2CStory)%20and%20assignee%20in%20%20"+Assignee+"%20and%20status%20in%20(Verified%2CClosed)%20and%20(labels%20!%3D%20Automation%20OR%20labels%20is%20EMPTY)";
 		System.out.println(url);
-		VelocityGenerator.getMetheVelocity(url,ProjectId);	
-		String URL_GH=getSprint(returnJSON(url));
-		String StateOfSprint=getStateOfSprint(returnJSON(url));
+		
+		String URL_GH=getSprint();
+		String StateOfSprint=getStateOfSprint();
 		////(StateOfSprint);
 		if(StateOfSprint.equals("CLOSED"))
 		{
 		////(url);
+		
+			VelocityGenerator.getMetheVelocity(url,ProjectId);		
 		/*****For sprint start and end dates*******/
 		
 		String []dates=getStartAndEndDate(returnJSON(URL_GH));
@@ -196,7 +202,7 @@ public static int returnCount(String str) throws BiffException, JSONException, I
 		final String IterationReport = "IterationReport.xls";
 		/* Gets Sprint ID */
 		
-		String sprintIdJIRA=getSprint(returnJSON(url));
+		String sprintIdJIRA=getSprint();
 		////(sprintIdJIRA);
 		
 		String totalstories_URL="https://infoedge.atlassian.net/rest/api/2/search?jql=project="+ProjectId+"%20and%20(type=story%20or%20type=Improvement)%20and%20(assignee%20in%20"+ Assignee+")%20and%20(status=closed%20or%20status=verified)%20and%20sprint="+sprint+"";              
@@ -253,7 +259,7 @@ public static int returnCount(String str) throws BiffException, JSONException, I
 		//query=project=NIR and labels in (clientIssue) and createdDate>="2016/01/12" and createdDate<="2016/01/25" and labels not in (datafix) and resolution not in("Won't Fix",Invalid)
 		String URLForClient="https://infoedge.atlassian.net/rest/api/2/search?jql=project%3D"+ProjectId+"%20and%20labels%20in%20(clientIssue)%20and%20createdDate%3E%3D%22"+dates[0]+"%22%20and%20createdDate%3C%3D%22"+dates[1]+"%22%20and%20labels%20not%20in%20(datafix)%20and%20(resolution%20not%20in%20(%22Won%27t%20Fix%22%2CDuplicate%2CInvalid)%20OR%20resolution%20%3D%20Unresolved)%20";
 		////(URLForClient);
-		String URLForClientDataFix="https://infoedge.atlassian.net/rest/api/2/search?jql=project%3D"+ProjectId+"%20and%20labels%20in%20(datafix)%20and%20labels%3Ddatafix%20and%20createdDate%3E%3D%22"+dates[0]+"%22%20and%20createdDate%3C%3D%22"+dates[1]+"%22%20and%20(resolution%20not%20in%20(%22Won%27t%20Fix%22%2CDuplicate%2CInvalid)%20OR%20resolution%20%3D%20Unresolved)%20";
+		String URLForClientDataFix="https://infoedge.atlassian.net/rest/api/2/search?jql=project%3D"+ProjectId+"%20and%20labels%20in%20(datafix)%20and%20labels%3Ddatafix%20and%20labels%20not%in%20(duplicatedf)%20and%20createdDate%3E%3D%22"+dates[0]+"%22%20and%20createdDate%3C%3D%22"+dates[1]+"%22%20and%20(resolution%20not%20in%20(%22Won%27t%20Fix%22%2CDuplicate%2CInvalid)%20OR%20resolution%20%3D%20Unresolved)%20";
 		////(URLForClientDataFix);
 		String URLForCompleteLive="https://infoedge.atlassian.net/rest/api/2/search?jql=project%3D%22"+ProjectId+"%22%20and%20labels%3Dlive%20and%20createdDate%3E%3D%22"+dates[0]+"%22%20and%20createdDate%3C%3D%22"+dates[1]+"%22%20and%20(resolution%20not%20in%20(%22Won%27t%20Fix%22%2CDuplicate%2CInvalid)%20OR%20resolution%20%3D%20Unresolved)%20";
 		//("URL for The live issues:"+URLForCompleteLive);
@@ -293,10 +299,15 @@ public static void WriteToExcel(String SheetName,String sprint, int issuesExcept
     
 }
 
-/******************Gets the velocity URL********************************/
-public static String[] getVelocityReportURL(String jsonText)
+/******************Gets the velocity URL
+ * @throws IOException 
+ * @throws JSONException 
+ * @throws BiffException ********************************/
+public static String[] getVelocityReportURL() throws BiffException, JSONException, IOException
 {
-	   String s="[0,"+jsonText+"]";
+	String URLToGetSprint="https://infoedge.atlassian.net/rest/api/2/search?jql=project%3D%22"+ProjectId+"%22%20and%20Sprint%3D"+sprint+"%20and%20type%20in%20(Improvement%2CStory)%20and%20(status=closed%20or%20status=verified)";
+	String jsonText=returnJSON(URLToGetSprint);
+	String s="[0,"+jsonText+"]";
 	      Object obj=JSONValue.parse(s);
 	      
 	      JSONArray array=(JSONArray)obj;
@@ -322,16 +333,22 @@ public static String[] getVelocityReportURL(String jsonText)
 }
 
 
-/******Gets the Greenhopper URL ******/ 
-public static String getSprint(String jsonText)
+/******Gets the Greenhopper URL 
+ * @throws IOException 
+ * @throws JSONException 
+ * @throws BiffException ******/ 
+public static String getSprint() throws BiffException, JSONException, IOException
 {
-    String s="[0,"+jsonText+"]";
+	String URLToGetSprint="https://infoedge.atlassian.net/rest/api/2/search?jql=project%3D%22"+ProjectId+"%22%20and%20Sprint%3D"+sprint+"%20and%20type%20in%20(Improvement%2CStory)%20and%20(status=closed%20or%20status=verified)";
+	String jsonText=returnJSON(URLToGetSprint);
+	String s="[0,"+jsonText+"]";
       Object obj=JSONValue.parse(s);
       
       JSONArray array=(JSONArray)obj;
                     
       JSONObject json=(JSONObject)array.get(1);
    
+      System.out.println("dekho----"+json);
       s=""+json.get("issues");
       obj=JSONValue.parse(s);
       array=(JSONArray)obj;
@@ -341,7 +358,7 @@ public static String getSprint(String jsonText)
       ////(sub);
       JSONArray a=((JSONArray)s2.get("customfield_10007"));
       int i=a.size();
-      String sub=""+a.get(i-1);
+      String sub=""+a.get(0);
       String rapidView=sub.substring(sub.indexOf("rapidViewId"), sub.indexOf(",",sub.indexOf("rapidViewId")));
       rapidView=rapidView.replaceAll("rapidViewId=", "");
       sub=sub.substring(sub.indexOf("id"), sub.indexOf(","));
@@ -353,8 +370,10 @@ public static String getSprint(String jsonText)
 
 
 
-public static String getStateOfSprint(String jsonText)
+public static String getStateOfSprint() throws BiffException, JSONException, IOException
 {
+	String URLToGetSprint="https://infoedge.atlassian.net/rest/api/2/search?jql=project%3D%22"+ProjectId+"%22%20and%20Sprint%3D"+sprint+"%20and%20type%20in%20(Improvement%2CStory)%20and%20(status=closed%20or%20status=verified)";
+	String jsonText=returnJSON(URLToGetSprint);
 	String s="[0,"+jsonText+"]";
     Object obj=JSONValue.parse(s);
     JSONArray array=(JSONArray)obj;

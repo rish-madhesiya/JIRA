@@ -25,12 +25,13 @@ static Xls_Reader datatable;
 	public static void getMetheVelocity(String url,String ProjectId) throws BiffException, JSONException, IOException, ParseException
 {
 	
-datatable=new Xls_Reader("Assignee.xls");
+		datatable=new Xls_Reader("Assignee.xls");
 	fw=new PrintStream(new File(ProjectId+"Velocity"+".txt"));
 	int i=0; 
 	String jsonText=ReportGenerator.returnJSON(url);
 	//(url);
-	String GH_URL=ReportGenerator.getSprint(jsonText);
+	String GH_URL=ReportGenerator.getSprint();
+	
 	System.out.println(GH_URL);
 	String jsonData=ReportGenerator.returnJSON(GH_URL);
 	String s="[0,"+jsonData+"]";
@@ -51,7 +52,7 @@ datatable=new Xls_Reader("Assignee.xls");
    
    //*********************For getting the commitment for the iteration**********************************//*
    float totalCommitment=0;
-   String []data=ReportGenerator.getVelocityReportURL(jsonText); //data[] has URL + the sprintID
+   String []data=ReportGenerator.getVelocityReportURL(); //data[] has URL + the sprintID
    //("----url----");
    //(data[0]);
    String jsonFromVel=ReportGenerator.returnJSON(data[0]);
@@ -264,7 +265,11 @@ Xls_Reader1.SetCellData("IterationReport.xls", ProjectId, 78, 5, ""+totalStoryPl
 
 fw.println("final live:"+totalLive);
 fw.println("Total Story Planned and completed:"+totalStoryPlannedCompleted);
+
 float unplannedComp=TotalEstimateCompleted-totalStoryPlannedCompleted;
+if(unplannedComp<0)
+	unplannedComp=0;
+
 fw.println("The unplanned completed is :"+unplannedComp);
 
 

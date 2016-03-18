@@ -15,7 +15,7 @@ public class BuildQuality
 static Xls_Reader datatable;
 public int Totalfunc=0,TotalInteg=0,TotalUI=0,TotalIncomplete=0,TotalInsufficient=0,TotalImplicit=0;	
 
-public static float[] calculateBuild(String StoryId) throws BiffException, IOException, JSONException
+public static float[] calculateBuild(String StoryId,String projectId) throws BiffException, IOException, JSONException
 	{
 		
 		
@@ -32,10 +32,12 @@ public static float[] calculateBuild(String StoryId) throws BiffException, IOExc
 		String URLCountBugs="https://infoedge.atlassian.net/rest/api/2/search/?jql=issue%20in%20linkedIssues(%22"+StoryId+"%22)";
 		String strcountBugs=ReportGenerator.returnJSON(URLCountBugs);
 		int countBugs=ReportGenerator.returnCount(strcountBugs);
-		String URLCountBugsStaging="https://infoedge.atlassian.net/rest/api/2/search/?jql=issue%20in%20linkedIssues(%22"+StoryId+"%22)%20and%20type%3DBug%20AND%20labels%3D%22DelayedFind%2FLive%22%20and%20(resolution%20not%20in%20(%22Won%27t%20Fix%22%2CDuplicate%2CInvalid)%20OR%20resolution%20%3D%20Unresolved)%20";
+		String URLCountBugsStaging="https://infoedge.atlassian.net/rest/api/2/search/?jql=issue%20in%20linkedIssues(%22"+StoryId+"%22)%20and%20type%3DBug%20AND%20labels%20in%20(%22DelayedFind%22%2C%22staging%22)%20and%20(resolution%20not%20in%20(%22Won%27t%20Fix%22%2CDuplicate%2CInvalid)%20OR%20resolution%20%3D%20Unresolved)%20";
+		System.out.println("CHeck this out:"+URLCountBugsStaging);
 		String strCountBugsStaging=ReportGenerator.returnJSON(URLCountBugsStaging);
 		int countBugsDup=ReportGenerator.returnCount(strCountBugsStaging);
-		for(int i=1;(i<(total-8)&&countBugs>0);i++)
+		
+		for(int i=1;(i<(total-16)&&countBugs>0);i++)
         {
         Severity=Xls_Reader1.CellData(dataHolder,i,0);
         
@@ -46,7 +48,7 @@ public static float[] calculateBuild(String StoryId) throws BiffException, IOExc
         
         weights=Float.parseFloat(Xls_Reader1.CellData(dataHolder,i,2));
         
-			String URLForBQ="https://infoedge.atlassian.net/rest/api/2/search/?jql=issue%20in%20linkedIssues(%22"+StoryId+"%22)%20and%20type%3DBug%20AND%20Severity%3D"+Severity+"%20AND%20Reason%3D%27"+Reason+"%27%20and%20(resolution%20not%20in%20(%22Won%27t%20Fix%22%2CDuplicate%2CInvalid)%20OR%20resolution%20%3D%20Unresolved)%20and%20(labels%20not%20in%20(%22delayedfind%2Flive%22)or%20labels%3Dnull)";
+			String URLForBQ="https://infoedge.atlassian.net/rest/api/2/search/?jql=issue%20in%20linkedIssues(%22"+StoryId+"%22)%20and%20project%3D%22"+projectId+"%22%20and%20type%3DBug%20AND%20Severity%3D"+Severity+"%20AND%20Reason%3D%27"+Reason+"%27%20and%20(resolution%20not%20in%20(%22Won%27t%20Fix%22%2CDuplicate%2CInvalid)%20OR%20resolution%20%3D%20Unresolved)%20and%20(labels%20not%20in%20(%22delayedfind%2Flive%22)or%20labels%3Dnull)";
 			
 			//System.out.println(URLForBQ);
 			String json=ReportGenerator.returnJSON(URLForBQ);
@@ -148,7 +150,7 @@ public static float[] calculateBuild(String StoryId) throws BiffException, IOExc
             Reason=Reason.replaceAll(" ", "%20");
         	labels=Xls_Reader1.CellData(dataHolder,m,0);
 			labels=labels.replaceAll("/", "%2F");
-			String URLForStagingBugs="https://infoedge.atlassian.net/rest/api/2/search/?jql=issue%20in%20linkedIssues(%22"+StoryId+"%22)%20and%20type%3DBug%20AND%20labels%3D%22"+labels+"%22%20AND%20Reason%3D%27"+Reason+"%27%20and%20(resolution%20not%20in%20(%22Won%27t%20Fix%22%2CDuplicate%2CInvalid)%20OR%20resolution%20%3D%20Unresolved)%20";
+			String URLForStagingBugs="https://infoedge.atlassian.net/rest/api/2/search/?jql=issue%20in%20linkedIssues(%22"+StoryId+"%22)%20and%20type%3DBug%20AND%20labels%3D%22"+labels+"%22%20AND%20Reason%3D%27"+Reason+"%27%20and%20project%3D%22"+projectId+"%22%20and%20(resolution%20not%20in%20(%22Won%27t%20Fix%22%2CDuplicate%2CInvalid)%20OR%20resolution%20%3D%20Unresolved)%20";
 			System.out.println(URLForStagingBugs);
 			String json2=ReportGenerator.returnJSON(URLForStagingBugs);
 			System.out.println(json2);
